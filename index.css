@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+/* 标题设置 */
+h1{
+  text-align: center;
+  padding: .125rem 0;
+  border-bottom: .025rem solid #333;
+}
+.wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
+/* 顶端头像 */
+.photo{
+  padding-top: .375rem;
+  padding-bottom: .375rem;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.photo img {
+  margin-bottom: .125rem;
+  max-width: 1rem;
+  max-height: 1rem;
+}
+.photo h1{
+  margin-top: .125rem;
+  color: #fff;
+}
+/* 主体部分 */
+.mainbox{
+  background-color: #f5f5f5;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+/* 主题内容设置 */
+.content{
+  background-color: #fff;
+  border-radius: 0.125rem;
+  padding: 0.125rem;  
+}
+.content span{
+  float: right;
+}
+/* 个人简介部分 */
+.person{
+  padding: 0 1.25rem;
+}
+.person table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: .3125rem;
+}
+.person table td{
+  width: 2.25rem;
+}
+/* 工作经历部分 */
+.work{
+  padding: 0 1.25rem;
+}
+.work .main{
+  padding: 0.125rem .25rem;
+  line-height: .3125rem;
+}
+.work span{
+  float: left;
+  font-weight: 700;
+}
+/* 个人技能部分 */
+.skill{
+  padding: 0 1.25rem;
+}
+.skill ul{
+  padding: 0.125rem .25rem;
+  line-height: .3125rem;
+}
+/* 获奖经历部分 */
+.award{
+  padding: 0 1.25rem;
+}
+.award ul{
+  padding: 0.125rem .25rem;
+  line-height: .3125rem;
+}
+/* 教育经历部分 */
+.education{
+  padding: 0 1.25rem;
+}
+.education .main{
+  padding: 0.125rem .25rem;
+  line-height: .3125rem;
+}
+.education span{
+  float: left;
+  font-weight: 700;
+}
+/* 自我评价部分 */
+.evaluate{
+  padding: 0 1.25rem;
+}
+.evaluate ul{
+  padding: 0.125rem .25rem;
+  line-height: .3125rem;
+}
+/* 脚注 */
+.footer{
+  background-color: #333;
+  height: 1rem;
+}

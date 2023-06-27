@@ -1,0 +1,225 @@
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷菜单 */
+/* 边框 */
+.shortcut{
+    height: 50px;
+    background-color: #333;
+}
+/* 整体靠右 */
+.shortcut .wrapper ul{
+    float: right;
+}
+/* 设置ul内格式 */
+.shortcut .wrapper li{
+    float: left;
+    line-height: 50px;
+}
+/* 设li中a样式 */
+.shortcut .wrapper li a{
+    position: relative;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #dcdcdc;
+    border-right: 1px solid #666666;
+}
+/* 消除最后一个边框 */
+.shortcut .wrapper li:last-child a{
+    border: 0;
+}
+/* 加入精灵图 */
+.shortcut .wrapper li a span{
+    display: inline-block;
+    margin-right: 8px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+
+    vertical-align: middle;
+}
+/* 加入二维码 */
+.shortcut .wrapper li a img{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 34px;
+    transform: translate(-50%);
+    z-index: 1;
+}
+/* 设置二维码伪类 */
+.shortcut .wrapper li a:hover img{
+    display: block;
+}
+
+/* 头部 */
+.header{
+    height: 132px;
+    background-color: #fff;
+}
+/* logo插入（记得用h1） */
+.header .logo{
+    float: left;
+    width: 207px;
+    height: 70px;
+    margin: 30px 0px 30px 25px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+/* 导航 */
+.header .nav{
+    float: left;
+    margin: 53px 0 0 40px;
+}
+.header .nav li{
+    float: left;
+    margin-right: 48px;
+}
+.header .nav a{
+    font-size: 16px;
+    color: #333333;
+    padding-bottom: 7px;
+    transition: all 0.2s;
+}
+.header .nav a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+/* 搜索框 */
+.header .search{
+    float: left;
+    width: 172px;
+    height: 30px;
+    margin: 54px 0 0 16px;
+
+    position: relative;
+}
+.header .search input{
+    width: 172px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    border: 0;
+    border-bottom: 2px solid #e7e7e7;
+}
+/* 调整文字部分 */
+.header .search input::placeholder{
+    font-size: 14px;
+    color: #cccccc;
+}
+/* 加入搜索精灵图 */
+.header .search span{
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+
+    position: absolute;
+    left: 2px;
+    top: 0;
+}
+/* 加入购物车精灵图 */
+.header .car{
+    position: relative;
+    float: right;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+    margin-right: 12px;
+    margin-top: 58px;
+}
+.header .car span{
+    position: absolute;
+    top: -5px;
+    right: -12px;
+
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background-color: #e26237;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 14px;
+}
+/* 版权配置 */
+.footer{
+    height: 341px;
+    background-color: #333;
+}
+.footer .wrapper .top{
+    padding: 60px 38px 0;
+    height: 172px;
+    border-bottom: 3px solid #434343;
+}
+.footer .wrapper .top li{
+    position: relative;
+    float: left;
+    width: 190px;
+	height: 58px;
+    line-height: 58px;
+    margin-right: 296px;
+}
+/* 移除最后一个li的外边距 */
+.footer .wrapper .top li:last-child{
+    margin-right: 0;
+}
+.footer .wrapper .top span{
+    padding-left: 77px;
+    font-size: 28px;
+    color: #ffffff;
+}
+/* 用伪元素添加精灵图 */
+.footer .wrapper .top li::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* 在每个li的最前面加入精灵图，但发现只有第一个logo，在下面进行调整 */
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+    /* 调整背景图片选取的精灵图的位置，使之一一对应 */
+.footer .wrapper .top li:nth-child(2)::before{
+    background-position: -64px 0;
+}
+.footer .wrapper .top li:nth-child(3)::before{
+    background-position: -130px 0;
+}
+
+/* 底端部分 */
+.footer .bottom{
+    padding-top: 41px;
+}
+.footer .bottom ul{
+    width: 622px;
+    margin: 0 auto;
+}
+.footer .bottom li{
+    float: left;
+}
+.footer .bottom a{
+    padding: 0 15px;
+    font-size: 14px;
+    color: #999999;
+    border-right: 1px solid #999999;
+}
+.footer .bottom li:last-child a{
+    border-right: 0;
+}
+/* 设置p的样式 */
+.footer .bottom p{
+    width: 622px;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
